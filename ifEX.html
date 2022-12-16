@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>If example [Age App]</h1>
+        <input type="number" id="num" placeholder="Enter your age"/>
+        <button onclick="f1()">Submit</button>
+        <p id='para'></p>
+    </body>
+    <script>
+        function f1(){
+            var a=document.getElementById("num");
+            var b=document.getElementById("para");
+            var c=parseInt(a.value);
+            if(c>=13 && c<=19){
+                b.innerHTML="Your age: "+c+" You are Teenager! Enjoy your day..";
+            }
+            else{
+                b.innerHTML="Your age:"+c+ "You are not Teenager! Go for work"
+            }
+        }
+    </script>
+</html>
